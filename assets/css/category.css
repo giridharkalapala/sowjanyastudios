@@ -1,0 +1,94 @@
+/* ===========================
+   CATEGORY SLIDER STYLES
+=========================== */
+
+.tp-product-category {
+  position: relative;
+}
+
+.tp-product-category .row {
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  padding-bottom: 10px;
+}
+
+.tp-product-category .row::-webkit-scrollbar {
+  display: none;
+}
+
+.tp-product-category .col {
+  flex: 0 0 auto;
+  width: 20%;
+}
+
+/* Card hover enhancement */
+.tp-product-category-item {
+  transition: transform 0.35s ease, box-shadow 0.35s ease;
+}
+
+.tp-product-category-item:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 18px 40px rgba(238, 33, 207, 0.25);
+}
+/* ============================
+   CATEGORY AUTO SLIDER FIX
+============================ */
+
+/* Force horizontal layout */
+.tp-product-category .row {
+  display: flex;
+  flex-wrap: nowrap !important;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
+  padding-bottom: 10px;
+}
+
+/* Hide scrollbar */
+.tp-product-category .row::-webkit-scrollbar {
+  display: none;
+}
+
+/* Make columns slide */
+.tp-product-category .col {
+  flex: 0 0 auto;
+  width: 20%;
+}
+
+/* Card animation */
+.tp-product-category-item {
+  transition: transform 0.35s ease, box-shadow 0.35s ease;
+}
+
+.tp-product-category-item:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 18px 40px rgba(238, 33, 207, 0.25);
+}
+
+/* ============================
+   RESPONSIVE SLIDE WIDTHS
+============================ */
+@media (max-width: 1200px) {
+  .tp-product-category .col {
+    width: 25%;
+  }
+}
+
+@media (max-width: 992px) {
+  .tp-product-category .col {
+    width: 33.333%;
+  }
+}
+
+@media (max-width: 768px) {
+  .tp-product-category .col {
+    width: 50%;
+  }
+}
+
+@media (max-width: 480px) {
+  .tp-product-category .col {
+    width: 70%;
+  }
+}
