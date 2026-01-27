@@ -4289,6 +4289,7 @@ only screen and (min-width: 576px) and (max-width: 767px),
 }
 
 .breadcrumb__title {
+  color: white;
   font-weight: 500;
   font-size: 44px;
   line-height: 1;
@@ -4309,8 +4310,12 @@ only screen and (min-width: 576px) and (max-width: 767px),
   padding: 0 7px;
   margin-bottom: 12px;
 }
+.breadcrumb__list span a{
+color: white;
+}
 
 .breadcrumb__list span {
+color: white;
   font-weight: 400;
   font-size: 16px;
   position: relative;
@@ -12183,7 +12188,7 @@ only screen and (min-width: 576px) and (max-width: 767px),
   height: 450px;
 } */
 .tp-slider-height {
-  min-height: 516px;
+  min-height: 616px;
 }
 
 @media only screen and (min-width: 576px) and (max-width: 767px),

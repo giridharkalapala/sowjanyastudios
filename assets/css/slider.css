@@ -1,0 +1,26 @@
+.tp-slider-item {
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.tp-slider-height {
+  min-height: 650px;
+}
+
+.tp-slider-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.15);
+  z-index: 0;
+}
+
+.tp-slider-content {
+  color: #fff;
+}
+
+/* .z-index-1 {
+  z-index: 1;
+  position: relative;
+} */
