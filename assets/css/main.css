@@ -830,9 +830,11 @@ input[type=color] {
   font-size: 14px;
   opacity: 1;
 }
-.section-bg{
+
+.section-bg {
   background-color: rgb(246 246 246) !important;
 }
+
 /*---------------------------------
     1.2 Common Classes
 ---------------------------------*/
@@ -1132,9 +1134,10 @@ div.demo img {
 /*----------------------------------------*/
 /*  2.2 Theme Settings
 /*----------------------------------------*/
-.tp-theme-settings{
+.tp-theme-settings {
   display: none !important;
 }
+
 .tp-theme-settings-area {
   position: fixed;
   top: 50%;
@@ -2892,7 +2895,8 @@ div.demo img {
 }
 
 [data-bg-color=footer-bg-white] {
-  background-color: #f6f6f6;;
+  background-color: #f6f6f6;
+  ;
 }
 
 /*----------------------------------------*/
@@ -4310,12 +4314,13 @@ only screen and (min-width: 576px) and (max-width: 767px),
   padding: 0 7px;
   margin-bottom: 12px;
 }
-.breadcrumb__list span a{
-color: white;
+
+.breadcrumb__list span a {
+  color: white;
 }
 
 .breadcrumb__list span {
-color: white;
+  color: white;
   font-weight: 400;
   font-size: 16px;
   position: relative;
@@ -11519,7 +11524,9 @@ only screen and (min-width: 576px) and (max-width: 767px),
 .tp-footer-widget-content ul li a:hover::after {
   background-color: var(--tp-theme-primary);
 }
-
+.offcanvas__logo a img{
+  max-width: 175px;
+}
 .tp-footer-logo {
   margin-bottom: 22px;
 }
@@ -11602,6 +11609,19 @@ only screen and (min-width: 576px) and (max-width: 767px),
 
 .tp-footer-payment p {
   margin-bottom: 0;
+}
+
+.tp-footer-payment p img {
+  max-width: 600px;
+}
+
+@media (min-width: 320px) and (max-width: 768px) {
+  .tp-footer-payment p img {
+    max-width: 300px;
+  }
+  .tp-footer-bottom-wrapper {
+    padding-bottom: 80px !important;
+}
 }
 
 .tp-footer-bottom-wrapper {
@@ -12184,6 +12204,7 @@ only screen and (min-width: 576px) and (max-width: 767px),
   color: var(--tp-common-white);
   border-color: rgba(255, 255, 255, 0.2);
 }
+
 /* .tp-slider-item.tp-slider-thumb img{
   height: 450px;
 } */
@@ -12194,7 +12215,7 @@ only screen and (min-width: 576px) and (max-width: 767px),
 @media only screen and (min-width: 576px) and (max-width: 767px),
 (max-width: 575px) {
   .tp-slider-height {
-    min-height: 816px;
+    min-height: 438px;
   }
 }
 
@@ -24858,7 +24879,7 @@ only screen and (min-width: 576px) and (max-width: 767px),
 /*
     RTL CSS Started
 */
-[dir=rtl] {
+/* [dir=rtl] { */
   /* home electronics */
   /*
       home fashion
@@ -24887,7 +24908,7 @@ only screen and (min-width: 576px) and (max-width: 767px),
   /*
       Coupon Page
   */
-}
+/* } */
 
 [dir=rtl] .tp-header-welcome span {
   margin-right: 0;
