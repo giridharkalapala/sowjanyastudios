@@ -23,7 +23,22 @@
 20. Video Play Js
 21. Password Toggle Js
 ****************************************************/
+// =======================================see more====
+function toggleText(el) {
+  const shortText = el.previousElementSibling.previousElementSibling;
+  const fullText = el.previousElementSibling;
 
+  if (fullText.style.display === "none" || fullText.style.display === "") {
+    fullText.style.display = "inline";
+    shortText.style.display = "none";
+    el.textContent = "See less";
+  } else {
+    fullText.style.display = "none";
+    shortText.style.display = "inline";
+    el.textContent = "See more";
+  }
+}
+// =======================================see more end===
 (function ($) {
 	"use strict";
 
@@ -1720,27 +1735,27 @@
 
 		$("#slider-range").slider({
 			range: true,
-			min: 0,
-			max: 500,
-			values: [75, 300],
+			min: 350,
+			max: 2400,
+			values: [350,2400],
 			slide: function (event, ui) {
-				$("#amount").val("$" + ui.values[0] + " - $" + ui.values[1]);
+				$("#amount").val("₹" + ui.values[0] + " -  ₹" + ui.values[1]);
 			}
 		});
-		$("#amount").val("$" + $("#slider-range").slider("values", 0) +
-			" - $" + $("#slider-range").slider("values", 1));
+		$("#amount").val("₹" + $("#slider-range").slider("values", 0) +
+			" - ₹" + $("#slider-range").slider("values", 1));
 
 		$("#slider-range-offcanvas").slider({
 			range: true,
-			min: 0,
-			max: 500,
-			values: [75, 300],
+			min: 350,
+			max: 2400,
+			values: [350,2400],
 			slide: function (event, ui) {
-				$("#amount-offcanvas").val("$" + ui.values[0] + " - $" + ui.values[1]);
+				$("#amount-offcanvas").val("₹" + ui.values[0] + " - ₹" + ui.values[1]);
 			}
 		});
-		$("#amount-offcanvas").val("$" + $("#slider-range-offcanvas").slider("values", 0) +
-			" - $" + $("#slider-range-offcanvas").slider("values", 1));
+		$("#amount-offcanvas").val("₹" + $("#slider-range-offcanvas").slider("values", 0) +
+			" - ₹" + $("#slider-range-offcanvas").slider("values", 1));
 	
 		
 
@@ -1785,11 +1800,11 @@
 
 		$("#slider-range").slider({
 			range: true,
-			min: 0,
-			max: 500,
-			values: [75, 300],
+			min: 350,
+			max: 2400,
+			values: [350,2400],
 			slide: function (event, ui) {
-			  $("#amount").val("$" + ui.values[0] + " - $" + ui.values[1]);
+			  $("#amount").val("₹" + ui.values[0] + " - ₹" + ui.values[1]);
 			},
 		});
 	}

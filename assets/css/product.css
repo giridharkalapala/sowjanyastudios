@@ -1,0 +1,163 @@
+/* DISCOUNT BADGE */
+.tp-discount-badge{
+  position:absolute;
+  top:14px;
+  left:14px;
+  background:#ff3f6c; /* Myntra pink */
+  color:#fff;
+  font-size:13px;
+  font-weight:700;
+  padding:6px 10px;
+  border-radius:4px;
+  z-index:2;
+}
+
+/* PRICE WRAPPER */
+.tp-product-price-wrapper-2{
+  display:flex;
+  align-items:center;
+  gap:8px;
+  margin-top:6px;
+}
+
+/* NEW PRICE */
+.tp-product-price-2.new-price{
+  font-size:18px;
+  font-weight:700;
+  color:#282c3f;
+}
+
+/* OLD PRICE */
+.tp-product-price-2.old-price{
+  font-size:14px;
+  color:#7e818c;
+  text-decoration:line-through;
+}
+
+/* DISCOUNT TEXT */
+.tp-product-discount{
+  font-size:13px;
+  font-weight:600;
+  color:#ff905a;
+}
+/* ================== */
+
+
+/* STOCK BADGE */
+.tp-stock-badge{
+  position:absolute;
+  top:14px;
+  right:14px;
+  font-size:12px;
+  font-weight:600;
+  padding:5px 10px;
+  border-radius:4px;
+  z-index:2;
+}
+
+.tp-stock-badge.in-stock{
+  background:#e6f4ea;
+  color:#137333;
+}
+
+.tp-stock-badge.out-stock{
+  background:#fdecea;
+  color:#b3261e;
+}
+
+/* PRICE WRAPPER */
+.tp-product-price-wrapper-2{
+  display:flex;
+  align-items:center;
+  gap:8px;
+  margin-top:6px;
+}
+
+/* =============== */
+
+/* WRAPPER */
+.empty-wrapper{
+  max-width:900px;
+  margin:auto;
+}
+
+/* EMPTY CARD */
+.empty-card{
+  background:#fff;
+  border-radius:8px;
+  padding:40px 30px;
+  text-align:center;
+  box-shadow:0 10px 30px rgba(0,0,0,.08);
+}
+
+/* ICON */
+.empty-icon{
+  width:64px;
+  height:64px;
+  margin:0 auto 20px;
+  border-radius:50%;
+  background:rgba(255,63,108,.12);
+  color:#ff3f6c;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  font-size:28px;
+  font-weight:700;
+}
+
+/* TITLE */
+.empty-title{
+  font-size:20px;
+  font-weight:600;
+  color:#282c3f;
+  margin-bottom:8px;
+}
+
+/* SUBTEXT */
+.empty-text{
+  font-size:15px;
+  color:#6f7284;
+  margin-bottom:30px;
+}
+
+/* SEARCH */
+.search-box{
+  max-width:600px;
+  margin:0 auto;
+  position:relative;
+}
+
+.search-box input{
+  width:100%;
+  padding:14px 50px 14px 16px;
+  font-size:15px;
+  border:1px solid #eaeaec;
+  border-radius:6px;
+  outline:none;
+  transition:.25s ease;
+}
+
+.search-box input:focus{
+  border-color:#ee21cf;
+  box-shadow:0 0 0 3px rgba(255,63,108,.15);
+}
+
+.search-icon{
+  position:absolute;
+  right:16px;
+  top:50%;
+  transform:translateY(-50%);
+  font-size:18px;
+  color:#999;
+  pointer-events:none;
+}
+
+/* MOBILE */
+@media(max-width:575px){
+  .empty-card{
+    padding:30px 20px;
+  }
+  .empty-title{
+    font-size:18px;
+  }
+}
