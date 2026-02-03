@@ -12,6 +12,15 @@
 
    <!-- Flaticon UIcons -->
    <link rel="stylesheet" href="https://cdn-uicons.flaticon.com/uicons-regular-rounded/css/uicons-regular-rounded.css">
+   <!-- Bootstrap Icons CDN -->
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+   <link rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer">
+
+
    <!-- custom css -->
    <link rel="stylesheet" href="assets/css/custom.css">
    <link rel="stylesheet" href="assets/css/category.css">
@@ -27,6 +36,7 @@
    <link rel="stylesheet" href="assets/css/flaticon_shofy.css">
    <link rel="stylesheet" href="assets/css/spacing.css">
    <link rel="stylesheet" href="assets/css/main.css">
+   <link rel="stylesheet" href="assets/css/product.css">
 
 </head>
 
@@ -222,13 +232,13 @@
             </div>
          </div>
          <div class="cartmini__checkout">
-            <!-- <div class="cartmini__checkout-title mb-30">
+            <div class="cartmini__checkout-title mb-30">
                <h4>Subtotal:</h4>
-               <span>$113.00</span>
-            </div> -->
+               <span>₹999.00</span>
+            </div>
             <div class="cartmini__checkout-btn">
-               <a href="#" class="tp-btn mb-10 w-100"> view cart</a>
-               <a href="#" class="tp-btn tp-btn-border w-100"> checkout</a>
+               <a href="cart.html" class="tp-btn mb-10 w-100"> view cart</a>
+               <a href="checkout.html" class="tp-btn tp-btn-border w-100"> checkout</a>
             </div>
          </div>
       </div>
@@ -237,7 +247,7 @@
 
    <!-- header area start -->
    <header>
-      <div class="tp-header-area tp-header-style-darkRed tp-header-height">
+      <div class="tp-header-area tp-header-style-darkRed">
          <!-- header top start  -->
          <div class="tp-header-top-2 p-relative z-index-11 tp-header-top-border d-none d-md-block">
             <div class="container">
@@ -294,16 +304,16 @@
                               <span class="tp-header-setting-toggle" id="tp-header-setting-toggle">Setting</span>
                               <ul>
                                  <li>
-                                    <a href="#">My Profile</a>
+                                    <a href="profile.html">My Profile</a>
                                  </li>
                                  <li>
-                                    <a href="#">Wishlist</a>
+                                    <a href="wishlist.html">Wishlist</a>
                                  </li>
                                  <li>
-                                    <a href="#">Cart</a>
+                                    <a href="cart.html">Cart</a>
                                  </li>
                                  <li>
-                                    <a href="#">Logout</a>
+                                    <a href="login.html">Logout</a>
                                  </li>
                               </ul>
                            </div>
@@ -331,7 +341,7 @@
                            <nav class="tp-main-menu-content">
                               <ul>
                                  <li class="has-mega-menu">
-                                    <a href="#">Home</a>
+                                    <a href="index.html">Home</a>
                                  </li>
                                  <li class="has-mega-menu">
                                     <a href="about.html">About us</a>
@@ -339,7 +349,7 @@
                                  <li class="has-dropdown">
                                     <a href="#">Our Fabric</a>
                                     <ul class="tp-submenu">
-                                       <li><a href="#">Daily wear</a></li>
+                                       <li><a href="daily_wear.html">Daily wear</a></li>
                                        <li><a href="#">Designer wear</a></li>
                                        <li><a href="#">Fancy</a></li>
                                        <li><a href="#">Pattu</a></li>
@@ -347,7 +357,7 @@
                                     </ul>
                                  </li>
                                  <li class="has-dropdown">
-                                    <a href="#">Shop</a>
+                                    <a href="shop.html">Shop</a>
                                     <ul class="tp-submenu">
                                        <li><a href="#">Sarees</a></li>
                                        <li><a href="#">Blouses</a></li>
@@ -356,7 +366,7 @@
                                     </ul>
                                  </li>
                                  <li class=" has-mega-menu">
-                                    <a href="#">Best Sellers</a>
+                                    <a href="best_seller.html">Best Sellers</a>
                                  </li>
                                  <li><a href="contact.html">Contact</a></li>
                               </ul>
@@ -453,7 +463,7 @@
 
                                     </ul>
                                  </li> -->
-                               
+
                               </ul>
                            </nav>
                         </div>
@@ -568,13 +578,17 @@
                               <h3 class="tp-slider-title">
                                  Timeless Saree <br> Collection 2026
                               </h3>
-                              <p>Exclusive Festive Offer Flat 
-                                 <span>10% 
-                                       <svg width="94" height="20" viewBox="0 0 94 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                          <path d="M74.8576 4.63367L78.6048 5.11367C80.9097 5.35155 82.8309 5.75148 84.4483 5.97993L86.6581 6.31091L88.4262 6.63948C89.4684 6.81761 90.2699 6.9312 90.8805 6.99186C93.3213 7.24888 92.7011 6.63674 92.8183 6.12534C92.9355 5.61394 93.7175 5.37081 91.3267 4.45886C90.73 4.24001 89.9345 3.97481 88.8826 3.65818L87.1034 3.12577L84.8643 2.63282C83.236 2.28025 81.2402 1.82307 78.8684 1.52138L75.0177 0.981633C73.6188 0.823014 72.1417 0.730003 70.5389 0.582533C63.0297 0.0282543 55.4847 0.193022 48.0068 1.07459C39.9065 2.04304 31.9328 3.87384 24.2213 6.53586C18.0824 8.61764 12.1674 11.3089 6.56479 14.5692C4.88189 15.5255 3.25403 16.5756 1.68892 17.7145C0.568976 18.5077 -0.00964231 18.9932 0.0547097 19.0858C0.388606 19.6584 10.6194 13.1924 25.151 8.99361C32.789 6.72748 40.6283 5.20536 48.5593 4.44848C55.8569 3.76455 63.1992 3.69678 70.5082 4.24591L74.8223 4.62335" fill="currentColor"></path>
-                                       </svg>
-                                    </span> 
-                                 Off this week</p>
+                              <p>Exclusive Festive Offer Flat
+                                 <span>10%
+                                    <svg width="94" height="20" viewBox="0 0 94 20" fill="none"
+                                       xmlns="http://www.w3.org/2000/svg">
+                                       <path
+                                          d="M74.8576 4.63367L78.6048 5.11367C80.9097 5.35155 82.8309 5.75148 84.4483 5.97993L86.6581 6.31091L88.4262 6.63948C89.4684 6.81761 90.2699 6.9312 90.8805 6.99186C93.3213 7.24888 92.7011 6.63674 92.8183 6.12534C92.9355 5.61394 93.7175 5.37081 91.3267 4.45886C90.73 4.24001 89.9345 3.97481 88.8826 3.65818L87.1034 3.12577L84.8643 2.63282C83.236 2.28025 81.2402 1.82307 78.8684 1.52138L75.0177 0.981633C73.6188 0.823014 72.1417 0.730003 70.5389 0.582533C63.0297 0.0282543 55.4847 0.193022 48.0068 1.07459C39.9065 2.04304 31.9328 3.87384 24.2213 6.53586C18.0824 8.61764 12.1674 11.3089 6.56479 14.5692C4.88189 15.5255 3.25403 16.5756 1.68892 17.7145C0.568976 18.5077 -0.00964231 18.9932 0.0547097 19.0858C0.388606 19.6584 10.6194 13.1924 25.151 8.99361C32.789 6.72748 40.6283 5.20536 48.5593 4.44848C55.8569 3.76455 63.1992 3.69678 70.5082 4.24591L74.8223 4.62335"
+                                          fill="currentColor"></path>
+                                    </svg>
+                                 </span>
+                                 Off this week
+                              </p>
 
                               <div class="tp-slider-btn">
                                  <a href="#" class="tp-btn tp-btn-2 tp-btn-white">
@@ -601,16 +615,20 @@
                                  Festive Wear <br>Sarees
                               </h3>
                               <p>Make every celebration special with <br>Up to
-                                 <span>20% 
-                                       <svg width="94" height="20" viewBox="0 0 94 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                          <path d="M74.8576 4.63367L78.6048 5.11367C80.9097 5.35155 82.8309 5.75148 84.4483 5.97993L86.6581 6.31091L88.4262 6.63948C89.4684 6.81761 90.2699 6.9312 90.8805 6.99186C93.3213 7.24888 92.7011 6.63674 92.8183 6.12534C92.9355 5.61394 93.7175 5.37081 91.3267 4.45886C90.73 4.24001 89.9345 3.97481 88.8826 3.65818L87.1034 3.12577L84.8643 2.63282C83.236 2.28025 81.2402 1.82307 78.8684 1.52138L75.0177 0.981633C73.6188 0.823014 72.1417 0.730003 70.5389 0.582533C63.0297 0.0282543 55.4847 0.193022 48.0068 1.07459C39.9065 2.04304 31.9328 3.87384 24.2213 6.53586C18.0824 8.61764 12.1674 11.3089 6.56479 14.5692C4.88189 15.5255 3.25403 16.5756 1.68892 17.7145C0.568976 18.5077 -0.00964231 18.9932 0.0547097 19.0858C0.388606 19.6584 10.6194 13.1924 25.151 8.99361C32.789 6.72748 40.6283 5.20536 48.5593 4.44848C55.8569 3.76455 63.1992 3.69678 70.5082 4.24591L74.8223 4.62335" fill="currentColor"></path>
-                                       </svg>
-                                    </span>
-                                 Off this season</p>
+                                 <span>20%
+                                    <svg width="94" height="20" viewBox="0 0 94 20" fill="none"
+                                       xmlns="http://www.w3.org/2000/svg">
+                                       <path
+                                          d="M74.8576 4.63367L78.6048 5.11367C80.9097 5.35155 82.8309 5.75148 84.4483 5.97993L86.6581 6.31091L88.4262 6.63948C89.4684 6.81761 90.2699 6.9312 90.8805 6.99186C93.3213 7.24888 92.7011 6.63674 92.8183 6.12534C92.9355 5.61394 93.7175 5.37081 91.3267 4.45886C90.73 4.24001 89.9345 3.97481 88.8826 3.65818L87.1034 3.12577L84.8643 2.63282C83.236 2.28025 81.2402 1.82307 78.8684 1.52138L75.0177 0.981633C73.6188 0.823014 72.1417 0.730003 70.5389 0.582533C63.0297 0.0282543 55.4847 0.193022 48.0068 1.07459C39.9065 2.04304 31.9328 3.87384 24.2213 6.53586C18.0824 8.61764 12.1674 11.3089 6.56479 14.5692C4.88189 15.5255 3.25403 16.5756 1.68892 17.7145C0.568976 18.5077 -0.00964231 18.9932 0.0547097 19.0858C0.388606 19.6584 10.6194 13.1924 25.151 8.99361C32.789 6.72748 40.6283 5.20536 48.5593 4.44848C55.8569 3.76455 63.1992 3.69678 70.5082 4.24591L74.8223 4.62335"
+                                          fill="currentColor"></path>
+                                    </svg>
+                                 </span>
+                                 Off this season
+                              </p>
 
                               <div class="tp-slider-btn">
                                  <a href="#" class="tp-btn tp-btn-2 tp-btn-white">
-                                     Explore Festive Collection →
+                                    Explore Festive Collection →
                                  </a>
                               </div>
                            </div>
@@ -619,7 +637,7 @@
                   </div>
                </div>
 
-                <div class="tp-slider-item tp-slider-height d-flex align-items-center swiper-slide include-bg"
+               <div class="tp-slider-item tp-slider-height d-flex align-items-center swiper-slide include-bg"
                   style="background-image: url('assets/images/b3.jpg');">
 
                   <div class="tp-slider-overlay"></div>
@@ -633,16 +651,20 @@
                                  Wedding & Party <br>Sarees
                               </h3>
                               <p> Graceful drapes crafted for special moments
-                                 <span>15% 
-                                       <svg width="94" height="20" viewBox="0 0 94 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                          <path d="M74.8576 4.63367L78.6048 5.11367C80.9097 5.35155 82.8309 5.75148 84.4483 5.97993L86.6581 6.31091L88.4262 6.63948C89.4684 6.81761 90.2699 6.9312 90.8805 6.99186C93.3213 7.24888 92.7011 6.63674 92.8183 6.12534C92.9355 5.61394 93.7175 5.37081 91.3267 4.45886C90.73 4.24001 89.9345 3.97481 88.8826 3.65818L87.1034 3.12577L84.8643 2.63282C83.236 2.28025 81.2402 1.82307 78.8684 1.52138L75.0177 0.981633C73.6188 0.823014 72.1417 0.730003 70.5389 0.582533C63.0297 0.0282543 55.4847 0.193022 48.0068 1.07459C39.9065 2.04304 31.9328 3.87384 24.2213 6.53586C18.0824 8.61764 12.1674 11.3089 6.56479 14.5692C4.88189 15.5255 3.25403 16.5756 1.68892 17.7145C0.568976 18.5077 -0.00964231 18.9932 0.0547097 19.0858C0.388606 19.6584 10.6194 13.1924 25.151 8.99361C32.789 6.72748 40.6283 5.20536 48.5593 4.44848C55.8569 3.76455 63.1992 3.69678 70.5082 4.24591L74.8223 4.62335" fill="currentColor"></path>
-                                       </svg>
-                                    </span>
-                                  Limited Offer</p>
+                                 <span>15%
+                                    <svg width="94" height="20" viewBox="0 0 94 20" fill="none"
+                                       xmlns="http://www.w3.org/2000/svg">
+                                       <path
+                                          d="M74.8576 4.63367L78.6048 5.11367C80.9097 5.35155 82.8309 5.75148 84.4483 5.97993L86.6581 6.31091L88.4262 6.63948C89.4684 6.81761 90.2699 6.9312 90.8805 6.99186C93.3213 7.24888 92.7011 6.63674 92.8183 6.12534C92.9355 5.61394 93.7175 5.37081 91.3267 4.45886C90.73 4.24001 89.9345 3.97481 88.8826 3.65818L87.1034 3.12577L84.8643 2.63282C83.236 2.28025 81.2402 1.82307 78.8684 1.52138L75.0177 0.981633C73.6188 0.823014 72.1417 0.730003 70.5389 0.582533C63.0297 0.0282543 55.4847 0.193022 48.0068 1.07459C39.9065 2.04304 31.9328 3.87384 24.2213 6.53586C18.0824 8.61764 12.1674 11.3089 6.56479 14.5692C4.88189 15.5255 3.25403 16.5756 1.68892 17.7145C0.568976 18.5077 -0.00964231 18.9932 0.0547097 19.0858C0.388606 19.6584 10.6194 13.1924 25.151 8.99361C32.789 6.72748 40.6283 5.20536 48.5593 4.44848C55.8569 3.76455 63.1992 3.69678 70.5082 4.24591L74.8223 4.62335"
+                                          fill="currentColor"></path>
+                                    </svg>
+                                 </span>
+                                 Limited Offer
+                              </p>
 
                               <div class="tp-slider-btn">
                                  <a href="#" class="tp-btn tp-btn-2 tp-btn-white">
-                                     View Bridal Sarees →
+                                    View Bridal Sarees →
                                  </a>
                               </div>
                            </div>
@@ -2966,7 +2988,7 @@
       <!-- best seller area end -->
 
       <section class="features pt-40 pb-40">
-<div class="feature">
+         <div class="feature">
             <div class="icon">
                <i class="fi fi-rr-truck-moving"></i>
             </div>
@@ -3000,7 +3022,10 @@
 
       </section>
 
-      <!-- <div class="modal fade tp-product-modal tp-product-modal-styleDarkRed" id="producQuickViewModal" tabindex="-1"
+    
+
+      <!-- product pop up -->
+      <div class="modal fade tp-product-modal" id="producQuickViewModal" tabindex="-1"
          aria-labelledby="producQuickViewModal" aria-hidden="true">
          <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content">
@@ -3008,23 +3033,23 @@
                   <button type="button" class="tp-product-modal-close-btn" data-bs-toggle="modal"
                      data-bs-target="#producQuickViewModal"><i class="fa-regular fa-xmark"></i></button>
                   <div class="tp-product-details-thumb-wrapper tp-tab d-sm-flex">
-                     <nav>
+                     <nav class="d-none">
                         <div class="nav nav-tabs flex-sm-column " id="productDetailsNavThumb" role="tablist">
                            <button class="nav-link active" id="nav-1-tab" data-bs-toggle="tab" data-bs-target="#nav-1"
                               type="button" role="tab" aria-controls="nav-1" aria-selected="true">
-                              <img src="assets/img/product/details/3/nav/product-details-nav-1.jpg" alt="">
+                              <img src="assets/images/Chinon Cut Work Saree With Work Blouse (1).webp" alt="">
                            </button>
                            <button class="nav-link" id="nav-2-tab" data-bs-toggle="tab" data-bs-target="#nav-2"
                               type="button" role="tab" aria-controls="nav-2" aria-selected="false">
-                              <img src="assets/img/product/details/3/nav/product-details-nav-2.jpg" alt="">
+                              <img src="assets/images/Chinon Cut Work Sare.webp" alt="">
                            </button>
                            <button class="nav-link" id="nav-3-tab" data-bs-toggle="tab" data-bs-target="#nav-3"
                               type="button" role="tab" aria-controls="nav-3" aria-selected="false">
-                              <img src="assets/img/product/details/3/nav/product-details-nav-3.jpg" alt="">
+                              <img src="assets/images/Chinon Cut Work Sare1.webp" alt="">
                            </button>
                            <button class="nav-link" id="nav-4-tab" data-bs-toggle="tab" data-bs-target="#nav-4"
                               type="button" role="tab" aria-controls="nav-4" aria-selected="false">
-                              <img src="assets/img/product/details/3/nav/product-details-nav-4.jpg" alt="">
+                              <img src="assets/images/Chinon Cut Work Sare2.webp" alt="">
                            </button>
                         </div>
                      </nav>
@@ -3032,106 +3057,117 @@
                         <div class="tab-pane fade show active" id="nav-1" role="tabpanel" aria-labelledby="nav-1-tab"
                            tabindex="0">
                            <div class="tp-product-details-nav-main-thumb">
-                              <img src="assets/img/product/details/3/main/product-details-main-1.jpg" alt="">
+                              <img src="assets/images/Chinon Cut Work Saree With Work Blouse (1).webp" alt="">
                            </div>
                         </div>
                         <div class="tab-pane fade" id="nav-2" role="tabpanel" aria-labelledby="nav-2-tab" tabindex="0">
                            <div class="tp-product-details-nav-main-thumb">
-                              <img src="assets/img/product/details/3/main/product-details-main-2.jpg" alt="">
+                              <img src="assets/images/Chinon Cut Work Sare.webp" alt="">
                            </div>
                         </div>
                         <div class="tab-pane fade" id="nav-3" role="tabpanel" aria-labelledby="nav-3-tab" tabindex="0">
                            <div class="tp-product-details-nav-main-thumb">
-                              <img src="assets/img/product/details/3/main/product-details-main-3.jpg" alt="">
+                              <img src="assets/images/Chinon Cut Work Sare1.webp" alt="">
                            </div>
                         </div>
                         <div class="tab-pane fade" id="nav-4" role="tabpanel" aria-labelledby="nav-4-tab" tabindex="0">
                            <div class="tp-product-details-nav-main-thumb">
-                              <img src="assets/img/product/details/3/main/product-details-main-4.jpg" alt="">
+                              <img src="assets/images/Chinon Cut Work Sare2.webp" alt="">
                            </div>
                         </div>
                      </div>
                   </div>
                   <div class="tp-product-details-wrapper">
-                     <div class="tp-product-details-category">
-                        <span>Shirt, Women</span>
-                     </div>
-                     <h3 class="tp-product-details-title">Brown Gown for Women</h3>
+                     <h3 class="tp-product-details-title">Chinon Cut Work Saree With Work Blouse – YEAR21</h3>
 
-                     
+
                      <div class="tp-product-details-inventory d-flex align-items-center mb-10">
                         <div class="tp-product-details-stock mb-10">
                            <span>In Stock</span>
                         </div>
-                        <div class="tp-product-details-rating-wrapper d-flex align-items-center mb-10">
-                           <div class="tp-product-details-rating">
-                              <span><i class="fa-solid fa-star"></i></span>
-                              <span><i class="fa-solid fa-star"></i></span>
-                              <span><i class="fa-solid fa-star"></i></span>
-                              <span><i class="fa-solid fa-star"></i></span>
-                              <span><i class="fa-solid fa-star"></i></span>
-                           </div>
-                           <div class="tp-product-details-reviews">
-                              <span>(36 Reviews)</span>
-                           </div>
-                        </div>
-                     </div>
-                     <p>A Screen Everyone Will Love: Whether your family is streaming or video chatting with friends
-                        tablet A8... <span>See more</span></p>
 
-                  
-                     <div class="tp-product-details-price-wrapper mb-20">
-                        <span class="tp-product-details-price old-price">$320.00</span>
-                        <span class="tp-product-details-price new-price">$236.00</span>
                      </div>
+                     <p> Chinon Cut Work Saree With Work Blouse
+                        Dispatch in 2 to 3 working days</p>
+                     <p>delivery in 7 to 10 working days after dispatch</p>
+                     <p>NO CASH ON DELIVERY</p>
+                     <p>NOTE:complete parcel opening video must incase of any damage or any issue return</p>
+                     <p> The Colours you see on your device may slightly vary due to the difference in an individual’s
+                        monitor</p>
 
-                    
+
+                     <div class="tp-product-details-price-wrapper mb-20 tp-product-price-wrapper-2">
+                                             <span class="tp-product-details-price new-price">₹499.00</span>
+                                             <span class="tp-product-details-price old-price">₹999.00</span>
+                                             <span class="tp-product-discount">50% OFF</span>
+                                          </div>
+
+
                      <div class="tp-product-details-variation">
-                       
-                        <div class="tp-product-details-variation-item">
-                           <h4 class="tp-product-details-variation-title">Color :</h4>
-                           <div class="tp-product-details-variation-list">
-                              <button type="button" class="color tp-color-variation-btn">
-                                 <span data-bg-color="#F8B655"></span>
-                                 <span class="tp-color-variation-tootltip">Yellow</span>
-                              </button>
-                              <button type="button" class="color tp-color-variation-btn active">
-                                 <span data-bg-color="#CBCBCB"></span>
-                                 <span class="tp-color-variation-tootltip">Gray</span>
-                              </button>
-                              <button type="button" class="color tp-color-variation-btn">
-                                 <span data-bg-color="#494E52"></span>
-                                 <span class="tp-color-variation-tootltip">Black</span>
-                              </button>
-                              <button type="button" class="color tp-color-variation-btn">
-                                 <span data-bg-color="#B4505A"></span>
-                                 <span class="tp-color-variation-tootltip">Brown</span>
-                              </button>
+
+                           <div class="tp-product-details-variation-item">
+                              <h4 class="tp-product-details-variation-title">Color : <span> Orange</span></h4>
+
+                              <div class="tp-product-details-variation-list product-desc">
+                                 <span class="short-text">
+                                    <button type="button" class="color tp-color-variation-btn active" data-target="#nav-1">
+                                       <img src="assets/images/Chinon Cut Work Saree With Work Blouse (1).webp" alt="">
+                                    </button>
+
+                                    <button type="button" class="color tp-color-variation-btn" data-target="#nav-2">
+                                       <img src="assets/images/Chinon Cut Work Sare.webp" alt="">
+                                    </button>
+
+                                    <button type="button" class="color tp-color-variation-btn" data-target="#nav-3">
+                                       <img src="assets/images/Chinon Cut Work Sare1.webp" alt="">
+                                    </button>
+
+                                 </span>
+
+                                 <span class="full-text">
+                                    <button type="button" class="color tp-color-variation-btn active" data-target="#nav-1">
+                                       <img src="assets/images/Chinon Cut Work Saree With Work Blouse (1).webp" alt="">
+                                    </button>
+
+                                    <button type="button" class="color tp-color-variation-btn" data-target="#nav-2">
+                                       <img src="assets/images/Chinon Cut Work Sare.webp" alt="">
+                                    </button>
+
+                                    <button type="button" class="color tp-color-variation-btn" data-target="#nav-3">
+                                       <img src="assets/images/Chinon Cut Work Sare1.webp" alt="">
+                                    </button>
+
+                                    <button type="button" class="color tp-color-variation-btn" data-target="#nav-4">
+                                       <img src="assets/images/Chinon Cut Work Sare2.webp" alt="">
+                                    </button>
+
+                                 </span>
+                                 <span class="see-more" onclick="toggleText(this)">See more</span>
+
+                              </div>
+
                            </div>
                         </div>
-                     </div>
 
-                 
+
                      <div class="tp-product-details-action-wrapper">
                         <h3 class="tp-product-details-action-title">Quantity</h3>
-                        <div class="tp-product-details-action-item-wrapper d-sm-flex align-items-center">
+                        <div class="tp-product-details-action-item-wrapper d-flex align-items-center">
                            <div class="tp-product-details-quantity">
                               <div class="tp-product-quantity mb-15 mr-15">
                                  <span class="tp-cart-minus">
-                                    <svg width="11" height="2" viewBox="0 0 11 2" fill="none"
-                                       xmlns="http://www.w3.org/2000/svg">
-                                       <path d="M1 1H10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
-                                          stroke-linejoin="round" />
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                       class="bi bi-dash-lg" viewBox="0 0 16 16">
+                                       <path fill-rule="evenodd"
+                                          d="M2 8a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11A.5.5 0 0 1 2 8" />
                                     </svg>
                                  </span>
                                  <input class="tp-cart-input" type="text" value="1">
                                  <span class="tp-cart-plus">
-                                    <svg width="11" height="12" viewBox="0 0 11 12" fill="none"
-                                       xmlns="http://www.w3.org/2000/svg">
-                                       <path d="M1 6H10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
-                                          stroke-linejoin="round" />
-                                       <path d="M5.5 10.5V1.5" stroke="currentColor" stroke-width="1.5"
-                                          stroke-linecap="round" stroke-linejoin="round" />
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                       class="bi bi-plus-lg" viewBox="0 0 16 16">
+                                       <path fill-rule="evenodd"
+                                          d="M8 2a.5.5 0 0 1 .5.5v5h5a.5.5 0 0 1 0 1h-5v5a.5.5 0 0 1-1 0v-5h-5a.5.5 0 0 1 0-1h5v-5A.5.5 0 0 1 8 2" />
                                     </svg>
                                  </span>
                               </div>
@@ -3143,24 +3179,7 @@
                         <button class="tp-product-details-buy-now-btn w-100">Buy Now</button>
                      </div>
                      <div class="tp-product-details-action-sm">
-                        <button type="button" class="tp-product-details-action-sm-btn">
-                           <svg width="14" height="16" viewBox="0 0 14 16" fill="none"
-                              xmlns="http://www.w3.org/2000/svg">
-                              <path d="M1 3.16431H10.8622C12.0451 3.16431 12.9999 4.08839 12.9999 5.23315V7.52268"
-                                 stroke="currentColor" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round"
-                                 stroke-linejoin="round" />
-                              <path d="M3.25177 0.985168L1 3.16433L3.25177 5.34354" stroke="currentColor"
-                                 stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round"
-                                 stroke-linejoin="round" />
-                              <path d="M12.9999 12.5983H3.13775C1.95486 12.5983 1 11.6742 1 10.5295V8.23993"
-                                 stroke="currentColor" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round"
-                                 stroke-linejoin="round" />
-                              <path d="M10.748 14.7774L12.9998 12.5983L10.748 10.4191" stroke="currentColor"
-                                 stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round"
-                                 stroke-linejoin="round" />
-                           </svg>
-                           Compare
-                        </button>
+
                         <button type="button" class="tp-product-details-action-sm-btn">
                            <svg width="17" height="16" viewBox="0 0 17 16" fill="none"
                               xmlns="http://www.w3.org/2000/svg">
@@ -3189,12 +3208,29 @@
                            Ask a question
                         </button>
                      </div>
+                     <hr>
+                     <h4 class="tp-product-details-variation-title"><strong>SKU :</strong> <span> YEAR21</span></h4>
+                     <h4 class="tp-product-details-variation-title"><strong>Categories :</strong> <span>
+                           <a class="tp-product-details-action-sm-btn" href="#">All Products</a>,
+                           <a class="tp-product-details-action-sm-btn" href="#">Fancy</a>,
+                           <a class="tp-product-details-action-sm-btn" href="#">New Arrival</a>,
+                           <a class="tp-product-details-action-sm-btn" href="#">Sarees</a>,
+                           <a class="tp-product-details-action-sm-btn" href="#">Under Rs.500</a></span>
+                     </h4>
+                     <div class="tp-product-details-social">
+                           <span>Share: </span>
+                           <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                           <a href="#" class="twitter"><i class="fa-brands fa-x-twitter"></i></a>
+                           <a href="#" class="pinterest"><i class="fa-brands fa-pinterest-p"></i></a>
+                           <a href="#" class="linkedin"><i class="fa-brands fa-linkedin-in"></i></a>
+                           <a href="#" class="telegram"><i class="fa-brands fa-telegram"></i></a>
+                        </div>
+
                   </div>
                </div>
             </div>
          </div>
-      </div> -->
-
+      </div>
    </main>
 
 
