@@ -2,33 +2,32 @@
 <html class="no-js" lang="zxx">
 
 <head>
-   <meta charset="utf-8">
-   <meta http-equiv="x-ua-compatible" content="ie=edge">
-   <title>Checkout</title>
-   <meta name="description" content="">
-   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>Pre Booking Collection | Sowjanya studios</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-   <link rel="shortcut icon" type="image/x-icon" href="assets/images/favicon.png">
+  <link rel="shortcut icon" type="image/x-icon" href="assets/images/favicon.png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer">
 
-   <!-- Flaticon UIcons -->
-   <link rel="stylesheet" href="https://cdn-uicons.flaticon.com/uicons-regular-rounded/css/uicons-regular-rounded.css">
-   <!-- Bootstrap Icons CDN -->
-   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 
-   <!-- CSS here -->
-   <link rel="stylesheet" href="assets/css/bootstrap.css">
-   <link rel="stylesheet" href="assets/css/animate.css">
-   <link rel="stylesheet" href="assets/css/swiper-bundle.css">
-   <link rel="stylesheet" href="assets/css/slick.css">
-   <link rel="stylesheet" href="assets/css/magnific-popup.css">
-   <link rel="stylesheet" href="assets/css/font-awesome-pro.css">
-   <link rel="stylesheet" href="assets/css/flaticon_shofy.css">
-   <link rel="stylesheet" href="assets/css/spacing.css">
-   <link rel="stylesheet" href="assets/css/main.css">
+  <!-- CSS here -->
+  <link rel="stylesheet" href="assets/css/bootstrap.css">
+  <link rel="stylesheet" href="assets/css/animate.css">
+  <link rel="stylesheet" href="assets/css/swiper-bundle.css">
+  <link rel="stylesheet" href="assets/css/slick.css">
+  <link rel="stylesheet" href="assets/css/magnific-popup.css">
+  <link rel="stylesheet" href="assets/css/font-awesome-pro.css">
+  <link rel="stylesheet" href="assets/css/flaticon_shofy.css">
+  <link rel="stylesheet" href="assets/css/spacing.css">
+  <link rel="stylesheet" href="assets/css/main.css">
+  <link rel="stylesheet" href="assets/css/product.css">
 </head>
 
 <body>
-
    <!-- back to top start -->
    <div class="back-to-top-wrapper">
       <button id="back_to_top" type="button" class="back-to-top-btn">
@@ -527,264 +526,428 @@
    </header>
    <!-- header area end -->
 
-   <main>
+  <!-- filter offcanvas area start -->
+  <div class="tp-filter-offcanvas-area">
+    <div class="tp-filter-offcanvas-wrapper">
+      <div class="tp-filter-offcanvas-close">
+        <button type="button" class="tp-filter-offcanvas-close-btn filter-close-btn">
+          <i class="fa-solid fa-xmark"></i>
+          Close
+        </button>
+      </div>
+      <div class="tp-shop-sidebar">
+        <!-- filter -->
+        <div class="tp-shop-widget mb-35">
+          <h3 class="tp-shop-widget-title no-border">Price Filter</h3>
 
-      <!-- breadcrumb area start -->
-      <section class="breadcrumb__area include-bg pt-95 pb-50 bg-c" data-bg-color="#EFF1F5">
-         <div class="container">
-            <div class="row">
-               <div class="col-xxl-12">
-                  <div class="breadcrumb__content p-relative z-index-1">
-                     <h3 class="breadcrumb__title_2">Checkout</h3>
-                     <div class="breadcrumb__list _2">
-                        <span><a href="index.html">Home</a></span>
-                        <span>Checkout</span>
-                     </div>
-                  </div>
-               </div>
+          <div class="tp-shop-widget-content">
+            <div class="tp-shop-widget-filter">
+              <div id="slider-range-offcanvas" class="mb-10"></div>
+              <div class="tp-shop-widget-filter-info d-flex align-items-center justify-content-between">
+                <span class="input-range">
+                  <input type="text" id="amount-offcanvas" readonly>
+                </span>
+                <button class="tp-shop-widget-filter-btn" type="button">Filter</button>
+              </div>
             </div>
-         </div>
-      </section>
-      <!-- breadcrumb area end -->
+          </div>
+        </div>
+        <!-- status -->
+        <div class="tp-shop-widget mb-50">
+          <h3 class="tp-shop-widget-title">Product Status</h3>
 
-      <!-- checkout area start -->
-      <section class="tp-checkout-area pb-120" data-bg-color="#EFF1F5">
-         <div class="container">
-            <div class="row">
+          <div class="tp-shop-widget-content">
+            <div class="tp-shop-widget-checkbox">
+              <ul class="filter-items filter-checkbox">
+                <li class="filter-item checkbox">
+                  <input id="on_sale2" type="checkbox">
+                  <label for="on_sale2">On sale</label>
+                </li>
+                <li class="filter-item checkbox">
+                  <input id="in_stock2" type="checkbox">
+                  <label for="in_stock2">In Stock</label>
+                </li>
+              </ul><!-- .filter-items -->
+            </div>
+          </div>
+        </div>
+        <!-- categories -->
+        <div class="tp-shop-widget mb-50">
+                        <h3 class="tp-shop-widget-title">Categories</h3>
 
-               <div class="col-lg-7">
-                  <div class="tp-checkout-bill-area">
-                     <h3 class="tp-checkout-bill-title">Billing Details</h3>
-
-                     <div class="tp-checkout-bill-form">
-                        <form action="#">
-                           <div class="tp-checkout-bill-inner">
-                              <div class="row">
-                                 <div class="col-md-6">
-                                    <div class="tp-checkout-input">
-                                       <label>First Name <span>*</span></label>
-                                       <input type="text" placeholder="First Name">
-                                    </div>
-                                 </div>
-                                 <div class="col-md-6">
-                                    <div class="tp-checkout-input">
-                                       <label>Last Name <span>*</span></label>
-                                       <input type="text" placeholder="Last Name">
-                                    </div>
-                                 </div>
-                                 <div class="col-md-12">
-                                    <div class="tp-checkout-input">
-                                       <label>Company name (optional)</label>
-                                       <input type="text" placeholder="Example LTD.">
-                                    </div>
-                                 </div>
-                                 <div class="col-md-12">
-                                    <div class="tp-checkout-input">
-                                       <label>Country / Region <span>*</span></label>
-                                       <p>India</p>
-                                    </div>
-                                 </div>
-                                 <div class="col-md-12">
-                                    <div class="tp-checkout-input">
-                                       <label>Street address <span>*</span></label>
-                                       <input type="text" placeholder="House number and street name">
-                                    </div>
-
-                                    <div class="tp-checkout-input">
-                                       <input type="text" placeholder="Apartment, suite, unit, etc. (optional)">
-                                    </div>
-                                 </div>
-                                 <div class="col-md-12">
-                                    <div class="tp-checkout-input">
-                                       <label>Town / City <span>*</span></label>
-                                       <input type="text" placeholder="Hyderabad">
-                                    </div>
-                                 </div>
-                                 <div class="col-md-6">
-                                    <div class="tp-checkout-input">
-                                       <label>State <span>*</span></label>
-                                       <!-- real select (for form submit) -->
-                                       <select id="stateSelect" name="state" required>
-                                          <option value="">Select State</option>
-                                       </select>
-                                       <!-- custom UI -->
-                                       <div class="select-btn" id="btn">
-                                          <span id="selectedText">Select State</span><i class="bi bi-chevron-down"></i>
-                                          <!-- list in main.js -->
-                                       </div>
-                                       <div class="options" id="optionsBox"></div>
-                                    </div>
-                                 </div>
-                                 <div class="col-md-6">
-                                    <div class="tp-checkout-input">
-                                       <label>PIN code <span>*</span></label>
-                                       <input type="text" placeholder="">
-                                    </div>
-                                 </div>
-                                 <div class="col-md-12">
-                                    <div class="tp-checkout-input">
-                                       <label>Phone <span>*</span></label>
-                                       <input type="text" placeholder="">
-                                    </div>
-                                 </div>
-                                 <div class="col-md-12">
-                                    <div class="tp-checkout-input">
-                                       <label>Email address (optional)</label>
-                                       <input type="email" placeholder="">
-                                    </div>
-                                 </div>
-                                 <div class="col-md-12">
-                                    <div class="tp-checkout-option-wrapper">
-                                       <div class="tp-checkout-option">
-                                          <input id="create_free_account" type="checkbox">
-                                          <label for="create_free_account">Create an account?</label>
-                                       </div>
-                                       <div class="tp-checkout-option">
-                                          <input id="ship_to_diff_address" type="checkbox">
-                                          <label for="ship_to_diff_address">Ship to a different address?</label>
-                                       </div>
-                                    </div>
-                                 </div>
-                                 <div class="col-md-12">
-                                    <div class="tp-checkout-input">
-                                       <label>Order notes (optional)</label>
-                                       <textarea
-                                          placeholder="Notes about your order, e.g. special notes for delivery."></textarea>
-                                    </div>
-                                 </div>
-                              </div>
+                        <div class="tp-shop-widget-content">
+                           <div class="tp-shop-widget-categories">
+                              <ul>
+                                <li><a class="main" href="pre_booking_collections.html">Pre Booking Collections <span>0</span></a></li>
+                                 <li><a href="above_2000rs.html">Above Rs.2000 <span>97</span></a></li>
+                                 <li><a href="all_products.html">All Products <span>645</span></a></li>
+                                 <li><a href="anniversary_sale.html">Anniversary Sale <span>0</span></a></li>
+                                 <li><a href="best_seller.html">Best Sellers <span>236</span></a></li>
+                                 <li><a href="blouses.html">Blouses <span>0</span></a></li>
+                                 <li><a href="cotton.html">Cotton <span>38</span></a></li>
+                                 <li><a href="daily_wear.html">Daily wear <span>0</span></a></li>
+                                 <li><a href="deals_of_the_day.html">Deals Of The Day <span>9</span></a></li>
+                                 <li><a href="designer_wear.html">Designer wear <span>190</span></a></li>
+                                 <li><a href="dresses.html">Dresses <span>0</span></a></li>
+                                 <li><a href="fancy.html">Fancy <span>357</span></a></li>
+                                 <li><a href="jewellery.html">jewellery <span>0</span></a></li>
+                                 <li><a href="lehangas.html">Lehangas <span>10</span></a></li>
+                                 <li><a href="new_arrival.html">New Arrival <span>602</span></a></li>
+                                 <li><a href="pattu.html">Pattu <span>316</span></a></li>
+                                 <li><a href="sarees.html">Sarees <span>638</span></a></li>
+                                 <li><a href="under_1000rs.html">Under Rs.1000 <span>244</span></a></li>
+                                 <li><a href="under_2000rs.html">Under Rs.2000 <span>374</span></a></li>
+                                 <li><a href="under_500rs.html">Under Rs.500 <span>30</span></a></li>
+                              </ul>
                            </div>
-                        </form>
+                        </div>
                      </div>
+        <!-- color -->
+        <div class="tp-shop-widget mb-50">
+          <h3 class="tp-shop-widget-title">Filter by Color</h3>
+
+          <div class="tp-shop-widget-content">
+            <div class="tp-shop-widget-checkbox-circle-list">
+              <ul>
+                <li>
+                  <div class="tp-shop-widget-checkbox-circle">
+                    <input type="checkbox" id="red2">
+                    <label for="red2">Red</label>
+                    <span data-bg-color="#FF401F" class="tp-shop-widget-checkbox-circle-self"></span>
                   </div>
-               </div>
-               <div class="col-lg-5">
-                  <!-- checkout place order -->
-                  <div class="tp-checkout-place white-bg">
-                     <h3 class="tp-checkout-place-title">Your Order</h3>
+                  <span class="tp-shop-widget-checkbox-circle-number">8</span>
+                </li>
+                <li>
+                  <div class="tp-shop-widget-checkbox-circle">
+                    <input type="checkbox" id="dark_blue2">
+                    <label for="dark_blue2">Dark Blue</label>
+                    <span data-bg-color="#4666FF" class="tp-shop-widget-checkbox-circle-self"></span>
+                  </div>
+                  <span class="tp-shop-widget-checkbox-circle-number">14</span>
+                </li>
+                <li>
+                  <div class="tp-shop-widget-checkbox-circle">
+                    <input type="checkbox" id="oragnge2">
+                    <label for="oragnge2">Orange</label>
+                    <span data-bg-color="#FF9E2C" class="tp-shop-widget-checkbox-circle-self"></span>
+                  </div>
+                  <span class="tp-shop-widget-checkbox-circle-number">18</span>
+                </li>
+                <li>
+                  <div class="tp-shop-widget-checkbox-circle">
+                    <input type="checkbox" id="purple2">
+                    <label for="purple2">Purple</label>
+                    <span data-bg-color="#B615FD" class="tp-shop-widget-checkbox-circle-self"></span>
+                  </div>
+                  <span class="tp-shop-widget-checkbox-circle-number">23</span>
+                </li>
+                <li>
+                  <div class="tp-shop-widget-checkbox-circle">
+                    <input type="checkbox" id="yellow2">
+                    <label for="yellow2">Yellow</label>
+                    <span data-bg-color="#FFD747" class="tp-shop-widget-checkbox-circle-self"></span>
+                  </div>
+                  <span class="tp-shop-widget-checkbox-circle-number">17</span>
+                </li>
+                <li>
+                  <div class="tp-shop-widget-checkbox-circle">
+                    <input type="checkbox" id="green2">
+                    <label for="green2">Green</label>
+                    <span data-bg-color="#41CF0F" class="tp-shop-widget-checkbox-circle-self"></span>
+                  </div>
+                  <span class="tp-shop-widget-checkbox-circle-number">15</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- filter offcanvas area end -->
 
-                     <div class="tp-order-info-list">
-                        <ul>
+  <main>
 
-                           <!-- header -->
-                           <li class="tp-order-info-list-header">
-                              <h4>Product</h4>
-                              <h4>Total</h4>
-                           </li>
-                           <!-- items -->
-                           <li class="tp-order-info-list-header">
-                              <div class="product-row" id="productRow">
-                                 <div class="product-left">
-                                    <span class="remove" onclick="removeItem()">×</span>
-                                    <img src="assets/images/Chinon Cut Work Saree With Work Blouse (1).webp">
-                                    <div>
-                                       <div class="product-name">
-                                          Chinon Cut Work Saree With Work Blouse - YEAR32
-                                       </div>
-                                       <div class="qty">
-                                          <button onclick="changeQty(-1)">−</button>
-                                          <span id="qty">1</span>
-                                          <button onclick="changeQty(1)">+</button>
-                                       </div>
-                                    </div>
-                                 </div>
-                                 <span>₹<span id="itemTotal">399.00</span></span>
-                              </div>
-                           </li>
 
-                           <!-- subtotal -->
-                           <div class="line">
-                              <span>Subtotal</span>
-                              <span class="amount">₹<span id="subtotal">399.00</span></span>
+    <!-- breadcrumb area start -->
+    <section class="breadcrumb__area include-bg text-center pt-100 pb-100"
+      style="background-image: url(assets/images/breadcrumb\ \(1\).jpg);">
+      <div class="container">
+        <div class="row">
+          <div class="col-xxl-12">
+            <div class="breadcrumb__content p-relative z-index-1">
+              <h3 class="breadcrumb__title">Pre Booking Collection</h3>
+              <div class="breadcrumb__list">
+                <span><a href="index.html">Home</a></span>
+                <span>Pre Booking Collection</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- breadcrumb area end -->
+
+    <!-- shop area start -->
+    <section class="tp-shop-area pt-70 pb-120">
+      <div class="container">
+        <div class="row">
+          <div class="left-bar col-xl-3 col-lg-4">
+            <div class="tp-shop-sidebar mr-10">
+              <!-- filter -->
+              <div class="tp-shop-widget mb-35">
+                <h3 class="tp-shop-widget-title no-border">Price Filter</h3>
+
+                <div class="tp-shop-widget-content">
+                  <div class="tp-shop-widget-filter">
+                    <div id="slider-range" class="mb-10"></div>
+                    <div class="tp-shop-widget-filter-info d-flex align-items-center justify-content-between">
+                      <span class="input-range">
+                        <input type="text" id="amount" readonly>
+                      </span>
+                      <button class="tp-shop-widget-filter-btn" type="button">Filter</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- status -->
+              <div class="tp-shop-widget mb-50">
+                <h3 class="tp-shop-widget-title">Product Status</h3>
+
+                <div class="tp-shop-widget-content">
+                  <div class="tp-shop-widget-checkbox">
+                    <ul class="filter-items filter-checkbox">
+                      <li class="filter-item checkbox">
+                        <input id="on_sale" type="checkbox">
+                        <label for="on_sale">On sale</label>
+                      </li>
+                      <li class="filter-item checkbox">
+                        <input id="in_stock" type="checkbox">
+                        <label for="in_stock">In Stock</label>
+                      </li>
+                    </ul><!-- .filter-items -->
+                  </div>
+                </div>
+              </div>
+              <!-- categories -->
+              <div class="tp-shop-widget mb-50">
+                        <h3 class="tp-shop-widget-title">Categories</h3>
+
+                        <div class="tp-shop-widget-content">
+                           <div class="tp-shop-widget-categories">
+                              <ul>
+                                <li><a class="main" href="pre_booking_collections.html">Pre Booking Collections <span>0</span></a></li>
+                                 <li><a href="above_2000rs.html">Above Rs.2000 <span>97</span></a></li>
+                                 <li><a href="all_products.html">All Products <span>645</span></a></li>
+                                 <li><a href="anniversary_sale.html">Anniversary Sale <span>0</span></a></li>
+                                 <li><a href="best_seller.html">Best Sellers <span>236</span></a></li>
+                                 <li><a href="blouses.html">Blouses <span>0</span></a></li>
+                                 <li><a href="cotton.html">Cotton <span>38</span></a></li>
+                                 <li><a href="daily_wear.html">Daily wear <span>0</span></a></li>
+                                 <li><a href="deals_of_the_day.html">Deals Of The Day <span>9</span></a></li>
+                                 <li><a href="designer_wear.html">Designer wear <span>190</span></a></li>
+                                 <li><a href="dresses.html">Dresses <span>0</span></a></li>
+                                 <li><a href="fancy.html">Fancy <span>357</span></a></li>
+                                 <li><a href="jewellery.html">jewellery <span>0</span></a></li>
+                                 <li><a href="lehangas.html">Lehangas <span>10</span></a></li>
+                                 <li><a href="new_arrival.html">New Arrival <span>602</span></a></li>
+                                 <li><a href="pattu.html">Pattu <span>316</span></a></li>
+                                 <li><a href="sarees.html">Sarees <span>638</span></a></li>
+                                 <li><a href="under_1000rs.html">Under Rs.1000 <span>244</span></a></li>
+                                 <li><a href="under_2000rs.html">Under Rs.2000 <span>374</span></a></li>
+                                 <li><a href="under_500rs.html">Under Rs.500 <span>30</span></a></li>
+                              </ul>
                            </div>
+                        </div>
+                     </div>
+              <!-- color -->
+              <div class="tp-shop-widget mb-50">
+                <h3 class="tp-shop-widget-title">Filter by Color</h3>
 
-                           <!-- shipping -->
-                           <div class="line">
-                              <span>Shipping</span>
-                              <span class="amount">₹<span>70.00</span></span>
-                           </div>
-                           <!-- total -->
-                           <div class="line total">
-                              <span>Total</span>
-                              <span class="amount">₹<span id="total">399.00</span></span>
-                           </div>
+                <div class="tp-shop-widget-content">
+                  <div class="tp-shop-widget-checkbox-circle-list">
+                    <ul>
+                      <li>
+                        <div class="tp-shop-widget-checkbox-circle">
+                          <input type="checkbox" id="red">
+                          <label for="red">Red</label>
+                          <span data-bg-color="#FF401F" class="tp-shop-widget-checkbox-circle-self"></span>
+                        </div>
+                        <span class="tp-shop-widget-checkbox-circle-number">8</span>
+                      </li>
+                      <li>
+                        <div class="tp-shop-widget-checkbox-circle">
+                          <input type="checkbox" id="dark_blue">
+                          <label for="dark_blue">Dark Blue</label>
+                          <span data-bg-color="#4666FF" class="tp-shop-widget-checkbox-circle-self"></span>
+                        </div>
+                        <span class="tp-shop-widget-checkbox-circle-number">14</span>
+                      </li>
+                      <li>
+                        <div class="tp-shop-widget-checkbox-circle">
+                          <input type="checkbox" id="oragnge">
+                          <label for="oragnge">Orange</label>
+                          <span data-bg-color="#FF9E2C" class="tp-shop-widget-checkbox-circle-self"></span>
+                        </div>
+                        <span class="tp-shop-widget-checkbox-circle-number">18</span>
+                      </li>
+                      <li>
+                        <div class="tp-shop-widget-checkbox-circle">
+                          <input type="checkbox" id="purple">
+                          <label for="purple">Purple</label>
+                          <span data-bg-color="#B615FD" class="tp-shop-widget-checkbox-circle-self"></span>
+                        </div>
+                        <span class="tp-shop-widget-checkbox-circle-number">23</span>
+                      </li>
+                      <li>
+                        <div class="tp-shop-widget-checkbox-circle">
+                          <input type="checkbox" id="yellow">
+                          <label for="yellow">Yellow</label>
+                          <span data-bg-color="#FFD747" class="tp-shop-widget-checkbox-circle-self"></span>
+                        </div>
+                        <span class="tp-shop-widget-checkbox-circle-number">17</span>
+                      </li>
+                      <li>
+                        <div class="tp-shop-widget-checkbox-circle">
+                          <input type="checkbox" id="green">
+                          <label for="green">Green</label>
+                          <span data-bg-color="#41CF0F" class="tp-shop-widget-checkbox-circle-self"></span>
+                        </div>
+                        <span class="tp-shop-widget-checkbox-circle-number">15</span>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-9 col-lg-8">
+            <div class="tp-shop-main-wrapper">
+
+              <div class="tp-shop-top mb-45">
+                <div class="row">
+                  <div class="col-xl-6">
+                    <div class="tp-shop-top-left d-flex align-items-center ">
+                      <div class="tp-shop-top-tab tp-tab">
+                        <ul class="nav nav-tabs" id="productTab" role="tablist">
+                          <li class="nav-item" role="presentation">
+                            <button class="nav-link active" id="grid-tab" data-bs-toggle="tab"
+                              data-bs-target="#grid-tab-pane" type="button" role="tab" aria-controls="grid-tab-pane"
+                              aria-selected="true">
+                              <svg width="18" height="18" viewBox="0 0 18 18" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                  d="M16.3327 6.01341V2.98675C16.3327 2.04675 15.906 1.66675 14.846 1.66675H12.1527C11.0927 1.66675 10.666 2.04675 10.666 2.98675V6.00675C10.666 6.95341 11.0927 7.32675 12.1527 7.32675H14.846C15.906 7.33341 16.3327 6.95341 16.3327 6.01341Z"
+                                  stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                                  stroke-linejoin="round" />
+                                <path
+                                  d="M16.3327 15.18V12.4867C16.3327 11.4267 15.906 11 14.846 11H12.1527C11.0927 11 10.666 11.4267 10.666 12.4867V15.18C10.666 16.24 11.0927 16.6667 12.1527 16.6667H14.846C15.906 16.6667 16.3327 16.24 16.3327 15.18Z"
+                                  stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                                  stroke-linejoin="round" />
+                                <path
+                                  d="M7.33268 6.01341V2.98675C7.33268 2.04675 6.90602 1.66675 5.84602 1.66675H3.15268C2.09268 1.66675 1.66602 2.04675 1.66602 2.98675V6.00675C1.66602 6.95341 2.09268 7.32675 3.15268 7.32675H5.84602C6.90602 7.33341 7.33268 6.95341 7.33268 6.01341Z"
+                                  stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                                  stroke-linejoin="round" />
+                                <path
+                                  d="M7.33268 15.18V12.4867C7.33268 11.4267 6.90602 11 5.84602 11H3.15268C2.09268 11 1.66602 11.4267 1.66602 12.4867V15.18C1.66602 16.24 2.09268 16.6667 3.15268 16.6667H5.84602C6.90602 16.6667 7.33268 16.24 7.33268 15.18Z"
+                                  stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                                  stroke-linejoin="round" />
+                              </svg>
+                            </button>
+                          </li>
+                          <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="list-tab" data-bs-toggle="tab" data-bs-target="#list-tab-pane"
+                              type="button" role="tab" aria-controls="list-tab-pane" aria-selected="false">
+                              <svg width="16" height="15" viewBox="0 0 16 15" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M15 7.11108H1" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                  stroke-linejoin="round" />
+                                <path d="M15 1H1" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                  stroke-linejoin="round" />
+                                <path d="M15 13.2222H1" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                  stroke-linejoin="round" />
+                              </svg>
+                            </button>
+                          </li>
                         </ul>
-                     </div>
-                     <div class="payment">
-                        <input type="radio" checked>
-                        <img src="assets/images/phonepe.png">
-                        <strong>PhonePe PG</strong>
-                     </div>
-                     <div class="payment-note">
-                        All UPI apps, Debit and Credit Cards, and NetBanking accepted | Powered by PhonePe
-                     </div>
-
-                     <div class="payment">
-                        <input type="radio">
-                        <img src="assets/images/razorpay.png">
-                        <strong>Pay by Razorpay</strong>
-                     </div>
-
-                     <div class="privacy">
-                        Your personal data will be used to process your order, support your experience throughout this
-                        website, and for other purposes described in our privacy policy.
-                     </div>
-
-                     <div class="tp-checkout-payment">
-                        <!-- <div class="tp-checkout-payment-item">
-                           <input type="radio" id="back_transfer" name="payment">
-                           <label for="back_transfer" data-bs-toggle="direct-bank-transfer">Direct Bank Transfer</label>
-                           <div class="tp-checkout-payment-desc direct-bank-transfer">
-                              <p>Make your payment directly into our bank account. Please use your Order ID as the
-                                 payment reference. Your order will not be shipped until the funds have cleared in our
-                                 account.</p>
-                           </div>
-                        </div>
-                        <div class="tp-checkout-payment-item">
-                           <input type="radio" id="cheque_payment" name="payment">
-                           <label for="cheque_payment">Cheque Payment</label>
-                           <div class="tp-checkout-payment-desc cheque-payment">
-                              <p>Make your payment directly into our bank account. Please use your Order ID as the
-                                 payment reference. Your order will not be shipped until the funds have cleared in our
-                                 account.</p>
-                           </div>
-                        </div>
-                        <div class="tp-checkout-payment-item">
-                           <input type="radio" id="cod" name="payment">
-                           <label for="cod">Cash on Delivery</label>
-                           <div class="tp-checkout-payment-desc cash-on-delivery">
-                              <p>Make your payment directly into our bank account. Please use your Order ID as the
-                                 payment reference. Your order will not be shipped until the funds have cleared in our
-                                 account.</p>
-                           </div>
-                        </div>
-                        <div class="tp-checkout-payment-item paypal-payment">
-                           <input type="radio" id="paypal" name="payment">
-                           <label for="paypal">PayPal <img src="assets/img/icon/payment-option.png" alt=""> <a
-                                 href="#">What is PayPal?</a></label>
-                        </div> -->
-                     </div>
-                     <div class="tp-checkout-agree">
-                        <div class="tp-checkout-option">
-                           <input id="read_all" type="checkbox">
-                           <label for="read_all">I have read and agree to the website.</label>
-                        </div>
-                     </div>
-                     <div class="tp-checkout-btn-wrapper">
-                        <a href="#" class="tp-checkout-btn w-100">Place Order</a>
-                     </div>
+                      </div>
+                      <div class="tp-shop-top-result">
+                        <p>Showing 1–14 of 26 results</p>
+                      </div>
+                    </div>
                   </div>
-               </div>
+                  <div class="col-xl-6">
+                    <div class="tp-shop-top-right d-sm-flex align-items-center justify-content-xl-end">
+                      <div class="tp-shop-top-select">
+                        <select>
+                          <option>Default Sorting</option>
+                          <option>Low to Hight</option>
+                          <option>High to Low</option>
+                          <option>New Added</option>
+                          <option>On Sale</option>
+                        </select>
+                      </div>
+                      <div class="tp-shop-top-filter">
+                        <button type="button" class="tp-filter-btn filter-open-btn">
+                          <span>
+                            <svg width="16" height="15" viewBox="0 0 16 15" fill="none"
+                              xmlns="http://www.w3.org/2000/svg">
+                              <path d="M14.9998 3.45001H10.7998" stroke="currentColor" stroke-width="1.5"
+                                stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                              <path d="M3.8 3.45001H1" stroke="currentColor" stroke-width="1.5" stroke-miterlimit="10"
+                                stroke-linecap="round" stroke-linejoin="round" />
+                              <path
+                                d="M6.5999 5.9C7.953 5.9 9.0499 4.8031 9.0499 3.45C9.0499 2.0969 7.953 1 6.5999 1C5.2468 1 4.1499 2.0969 4.1499 3.45C4.1499 4.8031 5.2468 5.9 6.5999 5.9Z"
+                                stroke="currentColor" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                              <path d="M15.0002 11.15H12.2002" stroke="currentColor" stroke-width="1.5"
+                                stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                              <path d="M5.2 11.15H1" stroke="currentColor" stroke-width="1.5" stroke-miterlimit="10"
+                                stroke-linecap="round" stroke-linejoin="round" />
+                              <path
+                                d="M9.4002 13.6C10.7533 13.6 11.8502 12.5031 11.8502 11.15C11.8502 9.79691 10.7533 8.70001 9.4002 8.70001C8.0471 8.70001 6.9502 9.79691 6.9502 11.15C6.9502 12.5031 8.0471 13.6 9.4002 13.6Z"
+                                stroke="currentColor" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                            </svg>
+                          </span>
+                          Filter
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- ========== -->
+              <div class="empty-wrapper">
+                <div class="empty-card">
+                  <div class="empty-icon">!</div>
+                  <div class="empty-title">
+                    No products found
+                  </div>
+                  <div class="empty-text">
+                    We couldn’t find any products matching your selection.
+                    Try searching with a different keyword.
+                  </div>
+                  <div class="search-box">
+                    <input type="text" placeholder="Search for products">
+                    <span class="search-icon">🔍</span>
+                  </div>
+                </div>
+              </div>
+              <!-- ========== -->
             </div>
-         </div>
-      </section>
-      <!-- checkout area end -->
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- shop area end -->
 
 
-   </main>
+  </main>
 
 
-   <!-- footer area start -->
+
+  <!-- footer area start -->
    <footer>
       <div class="tp-footer-area tp-footer-style-2" data-bg-color="footer-bg-white">
          <div class="tp-footer-top pt-95">
@@ -934,80 +1097,29 @@
          </div>
       </div>
    </footer>
-   <!-- footer area end -->
+  <!-- footer area end -->
 
 
 
-   <!-- JS here -->
-   <script data-cfasync="false" src="../../cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
-   <script src="assets/js/vendor/jquery.js"></script>
-   <script src="assets/js/vendor/waypoints.js"></script>
-   <script src="assets/js/bootstrap-bundle.js"></script>
-   <script src="assets/js/meanmenu.js"></script>
-   <script src="assets/js/swiper-bundle.js"></script>
-   <script src="assets/js/slick.js"></script>
-   <script src="assets/js/range-slider.js"></script>
-   <script src="assets/js/magnific-popup.js"></script>
-   <!-- <script src="assets/js/nice-select.js"></script> -->
-   <!-- <script src="assets/js/custom.js"></script> -->
-   <script src="assets/js/purecounter.js"></script>
-   <script src="assets/js/countdown.js"></script>
-   <script src="assets/js/wow.js"></script>
-   <script src="assets/js/isotope-pkgd.js"></script>
-   <script src="assets/js/imagesloaded-pkgd.js"></script>
-   <script src="assets/js/ajax-form.js"></script>
-   <script src="assets/js/main.js"></script>
-   <script>
-      // select and option dropdown=============
-      const states = [
-         "Andhra Pradesh", "Arunachal Pradesh", "Assam", "Bihar", "Chhattisgarh",
-         "Goa", "Gujarat", "Haryana", "Himachal Pradesh", "Jharkhand",
-         "Karnataka", "Kerala", "Ladakh", "Madhya Pradesh", "Maharashtra",
-         "Manipur", "Meghalaya", "Mizoram", "Nagaland", "Odisha",
-         "Punjab", "Rajasthan", "Sikkim", "Tamil Nadu", "Telangana",
-         "Tripura", "Uttarakhand", "Uttar Pradesh", "West Bengal",
-         "Delhi", "Chandigarh", "Lakshadweep", "Puducherry"
-      ];
 
-      const select = document.getElementById("stateSelect");
-      const optionsBox = document.getElementById("optionsBox");
-      const btn = document.getElementById("btn");
-      const text = document.getElementById("selectedText");
-
-      /* populate */
-      states.sort().forEach(state => {
-         const opt = new Option(state, state);
-         select.add(opt);
-
-         const div = document.createElement("div");
-         div.className = "option";
-         div.textContent = state;
-
-         div.onclick = () => {
-            text.textContent = state;
-            select.value = state;
-            optionsBox.style.display = "none";
-            btn.classList.remove("active");
-         };
-
-         optionsBox.appendChild(div);
-      });
-
-      /* toggle */
-      btn.onclick = () => {
-         optionsBox.style.display =
-            optionsBox.style.display === "block" ? "none" : "block";
-         btn.classList.toggle("active");
-      };
-
-      /* close outside */
-      document.addEventListener("click", e => {
-         if (!e.target.closest(".tp-checkout-input")) {
-            optionsBox.style.display = "none";
-            btn.classList.remove("active");
-         }
-      });
-   </script>
+  <!-- JS here -->
+  <script data-cfasync="false" src="../../cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
+  <script src="assets/js/vendor/jquery.js"></script>
+  <script src="assets/js/vendor/waypoints.js"></script>
+  <script src="assets/js/bootstrap-bundle.js"></script>
+  <script src="assets/js/meanmenu.js"></script>
+  <script src="assets/js/swiper-bundle.js"></script>
+  <script src="assets/js/slick.js"></script>
+  <script src="assets/js/range-slider.js"></script>
+  <script src="assets/js/magnific-popup.js"></script>
+  <script src="assets/js/nice-select.js"></script>
+  <script src="assets/js/purecounter.js"></script>
+  <script src="assets/js/countdown.js"></script>
+  <script src="assets/js/wow.js"></script>
+  <script src="assets/js/isotope-pkgd.js"></script>
+  <script src="assets/js/imagesloaded-pkgd.js"></script>
+  <script src="assets/js/ajax-form.js"></script>
+  <script src="assets/js/main.js"></script>
 </body>
 
 </html>

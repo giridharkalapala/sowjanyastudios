@@ -22,6 +22,7 @@
 19. Line Animation Js
 20. Video Play Js
 21. Password Toggle Js
+22. footer js
 ****************************************************/
 // =======================================see more====
 // # 1 
@@ -2096,3 +2097,7 @@ document.querySelectorAll(".tp-color-variation-btn").forEach(btn => {
 	}
 
 })(jQuery);
+// =============================
+// 22. footer js
+ // Automatically update year
+        document.getElementById("year").textContent = new Date().getFullYear();

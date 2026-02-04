@@ -1328,7 +1328,11 @@ div.demo img {
   transition: all 0.2s 0s cubic-bezier(0.25, 1, 0.5, 1);
   z-index: -1;
 }
-
+/* ACTIVE (default selected page) */
+.tp-shop-widget-categories ul li a.main {
+    color: #ee21cf;
+    /* font-weight: 600; */
+}
 .tp-theme-color-item.active button::before {
   opacity: 1;
   visibility: visible;
@@ -18615,7 +18619,7 @@ only screen and (min-width: 576px) and (max-width: 767px),
 }
 
 .tp-product-badge span.product-offer {
-  background-color: var(--tp-orange-1);
+  background-color: #c912ae;
 }
 
 .tp-product-badge span.product-sale {

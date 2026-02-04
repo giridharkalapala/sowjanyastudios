@@ -108,6 +108,7 @@
 
 .tp-view-more-btn:hover {
   background: #c81cad;
+  color: white;
   transform: translateY(-2px);
   box-shadow: 0 12px 30px rgba(238, 33, 207, 0.4);
 }
