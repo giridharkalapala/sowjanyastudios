@@ -91,4 +91,35 @@
   .tp-product-category .col {
     width: 70%;
   }
+ .tp-product-category .cat-arrow{
+  display: none;
+ }
 }
+
+/* =========================
+   ARROW BUTTONS (ADD ONLY)
+========================= */
+
+.cat-arrow{
+  position:absolute;
+  top:45%;
+  transform:translateY(-50%);
+  width:42px;
+  height:42px;
+  border-radius:50%;
+  border:none;
+  background:#fff;
+  box-shadow:0 6px 18px rgba(238, 33, 207, 0.25);
+  font-size:20px;
+  cursor:pointer;
+  z-index:99;
+  transition:0.25s;
+}
+
+.cat-arrow:hover{
+  background:#ee21cf;
+  color:#fff;
+}
+
+.cat-prev{ left:-15px; }
+.cat-next{ right:-15px; }

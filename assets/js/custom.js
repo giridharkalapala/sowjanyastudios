@@ -1,37 +1,21 @@
+
 const row = document.querySelector(".tp-product-category .row");
+const next = document.querySelector(".cat-next");
+const prev = document.querySelector(".cat-prev");
 
-let speed = 0.5; // scroll speed (smaller = slower)
-let scrollPos = 0;
+const jump = 300;
 
-/* Duplicate content for infinite loop */
-row.innerHTML += row.innerHTML;
-
-/* Set row width automatically */
-const items = row.children;
-let totalWidth = 0;
-
-Array.from(items).forEach(item => {
-  totalWidth += item.offsetWidth;
+/* arrows only */
+next.addEventListener("click", () => {
+  row.scrollBy({ left: jump, behavior: "smooth" });
 });
 
-function autoScroll() {
-  scrollPos += speed;
+prev.addEventListener("click", () => {
+  row.scrollBy({ left: -jump, behavior: "smooth" });
+});
 
-  if (scrollPos >= totalWidth / 2) {
-    scrollPos = 0;
-  }
 
-  row.scrollLeft = scrollPos;
-  requestAnimationFrame(autoScroll);
-}
-
-/* Pause on hover */
-row.addEventListener("mouseenter", () => speed = 0);
-row.addEventListener("mouseleave", () => speed = 0.5);
-
-/* Start */
-autoScroll();
-// =============================================================
+// ==================================================================================================================
 
 // =======================================see more====
 // # 1 
